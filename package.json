@@ -1,0 +1,24 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "shopping-cart",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "react-bootstrap": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Backend/server",
+    "server": "nodemon Backend/server",
+    "client": "npm start --prefix ecomm-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
